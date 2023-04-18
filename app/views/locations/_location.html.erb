@@ -1,0 +1,24 @@
+<div id="<%= dom_id location %>">
+<%= image_tag "https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s+ed333b(#{location.longitude},#{location.latitude})/#{location.longitude},#{location.latitude},12,0/300x200?access_token=pk.eyJ1IjoieDE4MTE5ODU5IiwiYSI6ImNsZ2tseWs1eDFoMzYzaXQxcW9wejZsYTMifQ.lE0CUOCG4kXRquI0RKHn4Q" %>
+
+  <p>
+    <strong>Name:</strong>
+    <%= location.name %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= location.address %>
+  </p>
+
+  <p>
+    <strong>Latitude:</strong>
+    <%= location.latitude %>
+  </p>
+
+  <p>
+    <strong>Longitude:</strong>
+    <%= location.longitude %>
+  </p>
+
+</div>
